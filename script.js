@@ -45,7 +45,7 @@ if (window.screen.width <= 768) {
         card.style.left = `${idx * 100}%`;
     })
     
-    const idxVal = localStorage.getItem('index');
+    const idxVal = localStorage.getItem('index') || 0;
     
     reviewCards.forEach(card=>{
         card.style.transform = `translateX(-${idxVal * 100}%)`;
